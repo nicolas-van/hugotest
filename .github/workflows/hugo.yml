@@ -17,8 +17,9 @@ jobs:
       uses: peaceiris/actions-hugo@v0.57.2
     - run: touch ./public/.nojekyll
     - name: deploy
-      uses: JamesIves/github-pages-deploy-action@2.0.1
+      uses: peaceiris/actions-gh-pages@v1.1.0
       env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: public
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
+
