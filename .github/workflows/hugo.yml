@@ -14,7 +14,7 @@ jobs:
     - run: git submodule update
     - name: build
       uses: peaceiris/actions-hugo@v0.57.2
-    - run: touch public/.nojekyll
+    - run: touch ./public/.nojekyll
     - name: deploy
       uses: peaceiris/actions-gh-pages@v1.1.0
       env:
