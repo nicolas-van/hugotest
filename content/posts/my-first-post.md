@@ -4,9 +4,4 @@ date: 2019-08-28T13:31:20+02:00
 draft: false
 ---
 
-This is a first post.
-test
-
-Haha.
-
-One more test
+Erasing test.
