@@ -17,7 +17,7 @@
       <pubDate>Wed, 28 Aug 2019 13:31:20 +0200</pubDate>
       
       <guid>./posts/my-first-post/</guid>
-      <description>Test.</description>
+      <description>Hey, I&amp;rsquo;m testing if Github actions work to publish directly to github pages!</description>
     </item>
     
   </channel>
