@@ -13,10 +13,15 @@ jobs:
     - run: git submodule init
     - run: git submodule update
     - run: mkdir -p ./public
-    - name: build
+    - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.62.2'
+        # extended: true
+    - name: Build
+      run: hugo --minify
     - run: touch ./public/.nojekyll
-    - name: deploy
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
